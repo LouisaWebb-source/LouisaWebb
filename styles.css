@@ -132,8 +132,8 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 }
 .age-card:before,.age-card:after{content:"";position:absolute;width:70px;height:1px;background:linear-gradient(90deg,transparent,var(--red-bright));top:35px}
 .age-card:before{left:25px}.age-card:after{right:25px;transform:scaleX(-1)}
-.thorn-mark{display:flex;justify-content:center;margin-bottom:20px}
-.thorn-mark img{display:block;width:34px;height:auto}
+.thorn-mark{position:relative;width:40px;height:42px;overflow:hidden;margin:0 auto 20px}
+.thorn-mark img{position:absolute;top:-12px;left:50%;width:228px;max-width:none;height:112px;transform:translateX(-50%)}
 .age-card h1{font-family:var(--serif);font-size:clamp(2.5rem,6vw,4.6rem);font-weight:400;margin:.1em 0 .2em}
 .age-card p{color:#c7babc}
 .age-lead{font-size:1.14rem;color:white!important}
