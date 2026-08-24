@@ -310,6 +310,10 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .gossip-index-card h2{margin:.25rem 0 1rem;color:var(--cream)}
 .gossip-index-card .card-link-label{margin-top:1rem}
 .record-page-nav{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin:28px 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.memo-entry-nav{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.memo-entry-nav a{color:var(--gold);text-decoration:none}
+.memo-entry-nav a:hover{text-decoration:underline;color:var(--cream)}
+.memo-entry-nav span{color:var(--muted)}
 .record-page-nav>:last-child{justify-self:end}
 .record-page-nav .text-link{white-space:nowrap;text-align:center}
 @media(max-width:720px){.archive-index-card{grid-template-columns:48px 1fr;padding:19px;gap:12px}.record-page-nav{grid-template-columns:1fr}.record-page-nav>*{justify-self:stretch!important;text-align:center}.record-page-nav span:empty{display:none}}
