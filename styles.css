@@ -303,8 +303,10 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .archive-index-grid{display:grid;gap:16px}
 .archive-index-card{display:grid;grid-template-columns:76px 1fr;gap:22px;align-items:center;padding:25px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(23,16,22,.95),rgba(9,7,10,.96));text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
 .archive-index-card:hover{transform:translateY(-3px);border-color:rgba(216,181,122,.55);box-shadow:0 18px 45px rgba(0,0,0,.28)}
-.archive-index-card .lore-mark{font-family:var(--serif);font-size:2rem;color:var(--red-bright)}
+.archive-index-card .lore-mark{align-self:center;margin:0;font-family:var(--serif);font-size:2rem;line-height:1;color:var(--red-bright)}
 .archive-index-card h2{margin:.25rem 0 1rem;font-family:var(--serif);font-size:clamp(1.25rem,2.3vw,1.8rem);color:var(--cream)}
+.gossip-index-card .eyebrow,.gossip-index-card h2{margin:.1rem 0;font-family:var(--serif);font-size:clamp(1.65rem,2.8vw,2.35rem);font-weight:400;line-height:1.12;letter-spacing:0;text-transform:none;color:#fff}
+.gossip-index-card .card-link-label{margin-top:1rem}
 .record-page-nav{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin:28px 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .record-page-nav>:last-child{justify-self:end}
 .record-page-nav .text-link{white-space:nowrap;text-align:center}
