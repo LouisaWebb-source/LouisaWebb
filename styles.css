@@ -90,12 +90,30 @@ button,a{font:inherit}
 .lore-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .lore-card{
   min-height:330px;padding:30px 28px;border:1px solid var(--line);border-radius:18px;position:relative;overflow:hidden;
-  background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.01))
+  background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.01));color:inherit;text-decoration:none
 }
 .lore-card:after{content:"";position:absolute;inset:auto -25% -45% 15%;height:70%;border:1px solid rgba(202,52,81,.12);border-radius:50%}
 .lore-mark{display:block;font-family:var(--serif);font-size:3.6rem;color:rgba(217,198,156,.12);line-height:1;margin-bottom:40px}
 .lore-card h3{font-family:var(--serif);font-size:1.65rem;font-weight:400;margin:.7rem 0 1rem;color:var(--cream)}
 .lore-card>p:last-child{color:var(--muted);position:relative;z-index:1}
+.lore-card-link{cursor:pointer;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.lore-card-link:hover,.lore-card-link:focus-visible{
+  transform:translateY(-6px);border-color:rgba(202,52,81,.56);box-shadow:0 20px 55px rgba(88,11,29,.24);outline:none
+}
+.card-link-label{position:absolute;left:28px;bottom:24px;color:var(--gold);font-size:.76rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;z-index:2}
+.series-guide-hero{min-height:60vh;padding-bottom:70px}
+.series-guide-hero .hero-copy{max-width:1200px;margin:auto}
+.series-guide-main .section-heading{max-width:940px}
+.reading-order{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.reading-card{min-height:270px;padding:32px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.01));position:relative}
+.reading-card.current{border-color:rgba(202,52,81,.52);box-shadow:0 18px 55px rgba(88,11,29,.18)}
+.reading-card h3{font-family:var(--serif);font-size:1.8rem;font-weight:400;margin:1rem 0}
+.reading-card p{color:var(--muted)}
+.guide-note{max-width:1000px;padding:clamp(30px,5vw,58px);border:1px solid rgba(217,198,156,.2);border-radius:22px;background:linear-gradient(135deg,rgba(87,15,34,.16),rgba(255,255,255,.015))}
+.guide-note h2{margin-top:0}
+.theme-list{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.theme-list span{border:1px solid rgba(217,198,156,.24);border-radius:999px;padding:8px 13px;color:var(--gold);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.guide-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
 .book-grid{display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:clamp(38px,7vw,100px);align-items:center}
 .book-cover-wrap img{border-radius:10px;box-shadow:var(--shadow)}
 .book-copy{max-width:760px;font-size:1.04rem;color:#d2c7c1}
@@ -165,6 +183,7 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 @media (max-width:1000px){
   .hero{min-height:auto}
   .lore-grid{grid-template-columns:repeat(2,1fr)}
+  .reading-order{grid-template-columns:1fr}
   .series-grid{grid-template-columns:repeat(2,1fr)}
   .arc-card{flex-direction:column;align-items:flex-start}
 }
