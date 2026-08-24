@@ -270,3 +270,31 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .guide-subsection>summary h3,.guide-subsection>summary h4{display:inline;margin:0;font-family:var(--serif);font-size:1.15rem;color:var(--cream)}
 .guide-subsection>.guide-section-body{padding:4px 20px 20px;border-top:1px solid var(--line)}
 .canon-note{color:#998b8e;font-style:italic}
+
+/* Fairyland Archives and House Roseheart records */
+.archive-main{max-width:1240px}
+.archive-section{padding-top:52px}
+.archive-callout{margin:18px 0 28px;padding:18px 22px;border-left:3px solid var(--red-bright);border-radius:0 12px 12px 0;background:rgba(91,17,34,.2)}
+.source-reference{font-size:.82rem;color:#998b8e;font-style:italic}
+.archive-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;padding:22px}
+.archive-card{padding:20px;border:1px solid rgba(216,181,122,.22);border-radius:13px;background:rgba(8,7,9,.58)}
+.archive-card h3{margin:0 0 10px;font-family:var(--serif);color:var(--cream)}
+.archive-card p{color:#bfb2b1;line-height:1.58}
+.archive-meta{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 14px}
+.archive-meta span,.record-status{padding:4px 8px;border:1px solid rgba(216,181,122,.25);border-radius:999px;color:#d8b57a;font:600 .7rem/1 var(--sans);letter-spacing:.04em}
+.records-list{display:grid;gap:11px}
+.record-card,.gossip-entry{border:1px solid var(--line);border-radius:13px;background:rgba(14,11,14,.82);overflow:hidden}
+.record-card>summary,.gossip-entry>summary{display:flex;align-items:center;flex-wrap:wrap;gap:12px;cursor:pointer;padding:17px 20px;font-family:var(--serif);font-size:1.06rem;color:var(--cream)}
+.record-date{min-width:78px;color:var(--gold);font-family:var(--sans);font-size:.75rem;letter-spacing:.05em;text-transform:uppercase}
+.record-status{margin-left:auto}
+.record-body,.gossip-body{padding:8px 22px 22px;border-top:1px solid var(--line);color:#c8bcbb}
+.record-body p,.gossip-body p{line-height:1.68}
+.birthday-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;padding:20px}
+.birthday-card{padding:17px;border:1px solid rgba(216,181,122,.2);border-radius:12px;background:rgba(8,7,9,.55)}
+.birthday-card>span{font:600 .72rem/1 var(--sans);letter-spacing:.07em;color:var(--gold);text-transform:uppercase}
+.birthday-card h3{margin:9px 0 6px;font-family:var(--serif);font-size:1.08rem;color:var(--cream)}
+.birthday-card p{margin:0;color:#998b8e;font-size:.83rem}
+.gossip-records>.guide-section{margin-bottom:16px}
+.gossip-entry{margin:12px 0}
+.gossip-body blockquote{margin:18px 0;padding:12px 18px;border-left:2px solid var(--red-bright);color:#d8cbca;font-family:var(--serif)}
+@media(max-width:620px){.archive-card-grid,.birthday-grid{grid-template-columns:1fr;padding:14px}.record-status{margin-left:0}.record-card>summary,.gossip-entry>summary{padding:15px}.record-body,.gossip-body{padding:7px 16px 18px}}
