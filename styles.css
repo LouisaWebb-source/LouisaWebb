@@ -305,7 +305,9 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .archive-index-card:hover{transform:translateY(-3px);border-color:rgba(216,181,122,.55);box-shadow:0 18px 45px rgba(0,0,0,.28)}
 .archive-index-card .lore-mark{align-self:center;margin:0;font-family:var(--serif);font-size:2rem;line-height:1;color:var(--red-bright)}
 .archive-index-card h2{margin:.25rem 0 1rem;font-family:var(--serif);font-size:clamp(1.25rem,2.3vw,1.8rem);color:var(--cream)}
-.gossip-index-card .eyebrow,.gossip-index-card h2{margin:.1rem 0;font-family:var(--serif);font-size:clamp(1.65rem,2.8vw,2.35rem);font-weight:400;line-height:1.12;letter-spacing:0;text-transform:none;color:#fff}
+.gossip-index-card .eyebrow,.gossip-index-card h2{font-family:var(--serif);font-size:clamp(1.25rem,2.3vw,1.8rem);font-weight:400;line-height:1.12}
+.gossip-index-card .eyebrow{margin:.1rem 0;color:var(--gold)}
+.gossip-index-card h2{margin:.25rem 0 1rem;color:var(--cream)}
 .gossip-index-card .card-link-label{margin-top:1rem}
 .record-page-nav{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin:28px 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .record-page-nav>:last-child{justify-self:end}
