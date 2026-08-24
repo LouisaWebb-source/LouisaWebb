@@ -85,6 +85,17 @@ button,a{font:inherit}
 .section-heading{max-width:780px;margin-bottom:48px}
 .section h2,.about-card h2{font-size:clamp(2.6rem,5vw,5rem);margin:.12em 0}
 .section-kicker{font-family:var(--serif);font-style:italic;color:#cbb8b5;font-size:1.15rem}
+.lore-section{background:linear-gradient(180deg,rgba(73,13,29,.08),transparent)}
+.lore-heading{max-width:920px}
+.lore-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.lore-card{
+  min-height:330px;padding:30px 28px;border:1px solid var(--line);border-radius:18px;position:relative;overflow:hidden;
+  background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.01))
+}
+.lore-card:after{content:"";position:absolute;inset:auto -25% -45% 15%;height:70%;border:1px solid rgba(202,52,81,.12);border-radius:50%}
+.lore-mark{display:block;font-family:var(--serif);font-size:3.6rem;color:rgba(217,198,156,.12);line-height:1;margin-bottom:40px}
+.lore-card h3{font-family:var(--serif);font-size:1.65rem;font-weight:400;margin:.7rem 0 1rem;color:var(--cream)}
+.lore-card>p:last-child{color:var(--muted);position:relative;z-index:1}
 .book-grid{display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:clamp(38px,7vw,100px);align-items:center}
 .book-cover-wrap img{border-radius:10px;box-shadow:var(--shadow)}
 .book-copy{max-width:760px;font-size:1.04rem;color:#d2c7c1}
@@ -153,6 +164,7 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 
 @media (max-width:1000px){
   .hero{min-height:auto}
+  .lore-grid{grid-template-columns:repeat(2,1fr)}
   .series-grid{grid-template-columns:repeat(2,1fr)}
   .arc-card{flex-direction:column;align-items:flex-start}
 }
@@ -162,6 +174,7 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
   .nav-toggle{display:block}
   .book-grid{grid-template-columns:1fr}
   .book-cover-wrap{max-width:320px;margin:auto}
+  .lore-grid{grid-template-columns:1fr}
   .series-grid{grid-template-columns:1fr}
   .site-footer{grid-template-columns:1fr}
   .footer-links{justify-content:flex-start}
