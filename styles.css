@@ -264,3 +264,9 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .guide-document hr{border:0;border-top:1px solid var(--line);margin:28px 0}
 .guide-document a{color:#efc1c9}
 @media(max-width:720px){.guide-section>summary{padding:18px}.guide-section-body{padding:4px 18px 22px}.guide-map{margin:22px -4px 30px;padding:7px;border-radius:12px}}
+
+.houses-courts-section{padding-top:54px}
+.houses-courts-content>.guide-section{margin:20px 0}
+.guide-subsection>summary h3,.guide-subsection>summary h4{display:inline;margin:0;font-family:var(--serif);font-size:1.15rem;color:var(--cream)}
+.guide-subsection>.guide-section-body{padding:4px 20px 20px;border-top:1px solid var(--line)}
+.canon-note{color:#998b8e;font-style:italic}
