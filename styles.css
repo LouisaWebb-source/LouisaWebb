@@ -136,6 +136,10 @@ button,a{font:inherit}
 .canon-subgroup>summary{cursor:pointer;padding:20px 22px;font-family:var(--serif);font-size:1.65rem;color:#efc1c9;list-style-position:inside}
 .canon-subgroup[open]>summary{border-bottom:1px solid var(--line);background:rgba(202,52,81,.06)}
 .canon-subgroup-content{padding:10px 16px 18px}
+.canon-subsubgroup{margin:12px 0;border-left:2px solid rgba(217,198,156,.24);background:rgba(255,255,255,.012)}
+.canon-subsubgroup>summary{cursor:pointer;padding:17px 20px;font-family:var(--serif);font-size:1.4rem;color:var(--gold);list-style-position:inside}
+.canon-subsubgroup[open]>summary{background:rgba(217,198,156,.035)}
+.canon-subsubgroup-content{padding:4px 14px 16px 20px}
 .canon-person{margin:12px 0;border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,rgba(255,255,255,.03),rgba(255,255,255,.008));overflow:hidden}
 .canon-person>summary{cursor:pointer;padding:18px 20px;font-family:var(--serif);font-size:1.35rem;color:var(--cream);list-style-position:inside}
 .canon-person[open]>summary{border-bottom:1px solid var(--line);color:#efc1c9}
