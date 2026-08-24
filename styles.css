@@ -207,7 +207,7 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .footer-note{grid-column:1/-1;margin:0;font-size:.73rem;color:#685e61}
 
 /* Age gate */
-.age-gate{position:fixed;inset:0;z-index:999;display:grid;place-items:center;padding:20px}
+.age-gate{position:fixed;inset:0;z-index:999;display:grid;place-items:center;padding:20px;overflow-y:auto;overscroll-behavior:contain}
 .age-gate[hidden]{display:none}
 .age-gate__backdrop{position:absolute;inset:0;background:
   radial-gradient(circle at 50% 30%,rgba(135,22,48,.30),transparent 32rem),
@@ -226,6 +226,16 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .age-lead{font-size:1.14rem;color:white!important}
 .age-actions{justify-content:center}
 .age-note{font-size:.73rem;color:#73676a!important;margin-top:23px}
+@media(max-width:620px){
+  .age-gate{display:block;padding:12px}
+  .age-card{width:100%;min-height:min-content;max-height:calc(100dvh - 24px);overflow-y:auto;padding:24px 20px 20px;margin:auto}
+  .thorn-mark{width:64px;height:64px;margin-bottom:10px}
+  .thorn-mark img{width:64px;height:64px}
+  .age-card h1{font-size:clamp(2rem,10vw,3rem)}
+  .age-card p{margin:.65rem 0;line-height:1.48}
+  .age-actions{margin-top:18px;flex-direction:column}
+  .age-actions .btn{width:100%;flex:none}
+}
 
 /* Legal pages */
 .legal-main{max-width:900px;margin:auto;padding:80px 24px 120px}
