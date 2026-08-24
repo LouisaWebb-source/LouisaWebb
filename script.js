@@ -65,6 +65,27 @@
     });
   }
 
+  document.querySelectorAll('.footer-links').forEach(footerLinks => {
+    const resetButton = footerLinks.querySelector('#resetAge');
+    const socialLinks = [
+      ['Contact', 'mailto:Louisa.Webb@gmx.de'],
+      ['Facebook', 'https://www.facebook.com/profile.php?id=61593585303756'],
+      ['Instagram', 'https://www.instagram.com/louisa_webb_author/']
+    ];
+
+    socialLinks.forEach(([label, href]) => {
+      if (footerLinks.querySelector(`a[href="${href}"]`)) return;
+      const link = document.createElement('a');
+      link.href = href;
+      link.textContent = label;
+      if (href.startsWith('http')) {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      }
+      footerLinks.insertBefore(link, resetButton);
+    });
+  });
+
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
