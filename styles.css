@@ -132,6 +132,10 @@ button,a{font:inherit}
 .canon-group>summary{cursor:pointer;padding:24px 28px;font-family:var(--serif);font-size:clamp(1.5rem,2.5vw,2.25rem);color:var(--gold);list-style-position:inside}
 .canon-group[open]>summary{border-bottom:1px solid var(--line);background:rgba(87,15,34,.12)}
 .canon-content{padding:12px clamp(14px,3vw,30px) 28px}
+.canon-subgroup{margin:16px 0 22px;border:1px solid rgba(202,52,81,.24);border-radius:15px;background:rgba(87,15,34,.08);overflow:hidden}
+.canon-subgroup>summary{cursor:pointer;padding:20px 22px;font-family:var(--serif);font-size:1.65rem;color:#efc1c9;list-style-position:inside}
+.canon-subgroup[open]>summary{border-bottom:1px solid var(--line);background:rgba(202,52,81,.06)}
+.canon-subgroup-content{padding:10px 16px 18px}
 .canon-person{margin:12px 0;border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,rgba(255,255,255,.03),rgba(255,255,255,.008));overflow:hidden}
 .canon-person>summary{cursor:pointer;padding:18px 20px;font-family:var(--serif);font-size:1.35rem;color:var(--cream);list-style-position:inside}
 .canon-person[open]>summary{border-bottom:1px solid var(--line);color:#efc1c9}
