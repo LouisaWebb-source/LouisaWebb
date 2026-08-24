@@ -171,6 +171,11 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .book-detail-problems{margin:1.5rem 0 1.8rem;padding-left:0;list-style:none;color:#d2c7c1}
 .book-detail-problems li{margin:.38rem 0}
 .book-detail-final{margin-top:2rem!important;padding-top:1.5rem;border-top:1px solid var(--line);font-family:var(--serif);font-size:1.12rem;color:var(--gold)!important}
+.excerpt-section{padding-top:48px}
+.excerpt-paper{max-width:860px;margin:0 auto;padding:clamp(28px,6vw,70px);border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(23,16,22,.96),rgba(9,7,10,.98));box-shadow:var(--shadow)}
+.excerpt-paper p{margin:0 0 1.35rem;font-family:var(--serif);font-size:clamp(1.05rem,1.5vw,1.22rem);line-height:1.85;color:#e3d9cc}
+.excerpt-paper p:first-child{font-size:clamp(1.3rem,2vw,1.65rem);color:var(--cream)}
+.excerpt-end{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line);text-align:center;color:var(--gold)!important;font-style:italic}
 .arc-section{padding-top:40px}
 .arc-card{
   max-width:1200px;margin:auto;padding:clamp(32px,6vw,70px);display:flex;align-items:center;justify-content:space-between;gap:35px;
