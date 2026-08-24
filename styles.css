@@ -227,6 +227,12 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .legal-main h2{font-family:var(--serif);font-weight:400;color:var(--gold);margin-top:42px}
 .legal-notice{padding:20px;border:1px solid #a63149;background:#2b1119;border-radius:12px;color:#ffe5e9}
 .placeholder{background:#27171c;padding:2px 6px;border-radius:4px;color:#ffb7c2}
+.legal-main address{font-style:normal;color:#d7cbbe;line-height:1.8}
+.legal-main a:not(.btn){color:#efc1c9}
+.legal-main .legal-summary{font-size:1.1rem;color:#d7cbbe}
+.legal-main .legal-updated{font-size:.78rem;color:#817579}
+.legal-main ul{color:#c9bdbc}
+.legal-main section{margin-top:38px}
 
 @media (max-width:1000px){
   .hero{min-height:auto}
