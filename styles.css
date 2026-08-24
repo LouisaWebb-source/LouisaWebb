@@ -114,6 +114,16 @@ button,a{font:inherit}
 .theme-list{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
 .theme-list span{border:1px solid rgba(217,198,156,.24);border-radius:999px;padding:8px 13px;color:var(--gold);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
 .guide-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.character-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.character-card{min-height:340px;padding:clamp(28px,4vw,46px);border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.01));position:relative;overflow:hidden}
+.character-card.featured{border-color:rgba(202,52,81,.48);background:radial-gradient(circle at 100% 0,rgba(202,52,81,.13),transparent 18rem),linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.01))}
+.character-card h3{font-family:var(--serif);font-size:clamp(2rem,3vw,3.2rem);font-weight:400;margin:.7rem 0 1rem}
+.character-card p{color:var(--muted);max-width:650px}
+.character-role{display:inline-block;color:var(--gold);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;margin-top:18px}
+.alliance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.alliance-card{padding:26px;border-top:1px solid rgba(217,198,156,.25);background:linear-gradient(180deg,rgba(255,255,255,.025),transparent)}
+.alliance-card h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;color:var(--cream);margin:.2rem 0 .8rem}
+.alliance-card p{color:var(--muted);font-size:.93rem}
 .book-grid{display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:clamp(38px,7vw,100px);align-items:center}
 .book-cover-wrap img{border-radius:10px;box-shadow:var(--shadow)}
 .book-copy{max-width:760px;font-size:1.04rem;color:#d2c7c1}
@@ -184,6 +194,7 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
   .hero{min-height:auto}
   .lore-grid{grid-template-columns:repeat(2,1fr)}
   .reading-order{grid-template-columns:1fr}
+  .alliance-grid{grid-template-columns:repeat(2,1fr)}
   .series-grid{grid-template-columns:repeat(2,1fr)}
   .arc-card{flex-direction:column;align-items:flex-start}
 }
@@ -194,6 +205,7 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
   .book-grid{grid-template-columns:1fr}
   .book-cover-wrap{max-width:320px;margin:auto}
   .lore-grid{grid-template-columns:1fr}
+  .character-grid,.alliance-grid{grid-template-columns:1fr}
   .series-grid{grid-template-columns:1fr}
   .site-footer{grid-template-columns:1fr}
   .footer-links{justify-content:flex-start}
