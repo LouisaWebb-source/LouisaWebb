@@ -1,4 +1,11 @@
 (() => {
+  // Privacy-friendly, cookieless visitor statistics for all site pages.
+  const analytics = document.createElement('script');
+  analytics.async = true;
+  analytics.src = 'https://gc.zgo.at/count.js';
+  analytics.dataset.goatcounter = 'https://louisawebb.goatcounter.com/count';
+  document.head.appendChild(analytics);
+
   const gate = document.getElementById('ageGate');
   const enter = document.getElementById('enterSite');
   const leave = document.getElementById('leaveSite');
