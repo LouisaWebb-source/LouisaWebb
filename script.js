@@ -4,6 +4,62 @@
   analytics.async = true;
   analytics.src = 'https://gc.zgo.at/count.js';
   analytics.dataset.goatcounter = 'https://louisawebb.goatcounter.com/count';
+
+  // Anonymous click events for the main reader actions.
+  const trackedLinks = [
+    ['a[href="https://a.co/d/08CE61fI"]', 'click-preorder-amazon', 'Pre-order on Amazon'],
+    ['a[href="excerpt.html"]', 'click-read-excerpt', 'Read the excerpt'],
+    ['a[href="trigger-warnings/"]', 'click-trigger-warnings', 'Read trigger warnings'],
+    ['a[href*="forms.gle"]', 'click-arc-application', 'Open ARC application'],
+    ['a[href*="instagram.com/louisa_webb_author"]', 'click-instagram', 'Open Instagram'],
+    ['a[href*="facebook.com/profile.php"]', 'click-facebook', 'Open Facebook']
+  ];
+
+  trackedLinks.forEach(([selector, eventPath, title]) => {
+    document.querySelectorAll(selector).forEach(link => {
+      link.dataset.goatcounterClick = eventPath;
+      link.dataset.goatcounterTitle = title;
+    });
+  });
+
+  analytics.addEventListener('load', () => {
+    // Record each homepage section once when at least half of it is visible.
+    if (!document.querySelector('.hero') || !window.goatcounter?.count) return;
+
+    const sections = [
+      ['.hero', 'section-hero', 'Homepage section: Hero'],
+      ['.social-banner', 'section-social', 'Homepage section: Social links'],
+      ['#books', 'section-book-one', 'Homepage section: Book One'],
+      ['#fairyland', 'section-fairyland', 'Homepage section: Inside Fairyland'],
+      ['#series', 'section-series', 'Homepage section: Series'],
+      ['#arc', 'section-arc', 'Homepage section: ARC Readers'],
+      ['#warnings', 'section-warnings', 'Homepage section: Trigger Warnings'],
+      ['#about', 'section-about', 'Homepage section: About Louisa Webb']
+    ];
+
+    const seen = new Set();
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting || entry.intersectionRatio < 0.5) return;
+        const config = sections.find(([selector]) => entry.target.matches(selector));
+        if (!config || seen.has(config[1])) return;
+
+        seen.add(config[1]);
+        window.goatcounter.count({
+          path: config[1],
+          title: config[2],
+          event: true
+        });
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.5 });
+
+    sections.forEach(([selector]) => {
+      const section = document.querySelector(selector);
+      if (section) observer.observe(section);
+    });
+  });
+
   document.head.appendChild(analytics);
 
   const gate = document.getElementById('ageGate');
