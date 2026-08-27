@@ -10,7 +10,6 @@
     ['a[href="https://a.co/d/08CE61fI"]', 'click-preorder-amazon', 'Pre-order on Amazon'],
     ['a[href="excerpt.html"]', 'click-read-excerpt', 'Read the excerpt'],
     ['a[href="trigger-warnings/"]', 'click-trigger-warnings', 'Read trigger warnings'],
-    ['a[href*="forms.gle"]', 'click-arc-application', 'Open ARC application'],
     ['a[href*="instagram.com/louisa_webb_author"]', 'click-instagram', 'Open Instagram'],
     ['a[href*="facebook.com/profile.php"]', 'click-facebook', 'Open Facebook']
   ];
@@ -32,7 +31,6 @@
       ['#books', 'section-book-one', 'Homepage section: Book One'],
       ['#fairyland', 'section-fairyland', 'Homepage section: Inside Fairyland'],
       ['#series', 'section-series', 'Homepage section: Series'],
-      ['#arc', 'section-arc', 'Homepage section: ARC Readers'],
       ['#warnings', 'section-warnings', 'Homepage section: Trigger Warnings'],
       ['#about', 'section-about', 'Homepage section: About Louisa Webb']
     ];
