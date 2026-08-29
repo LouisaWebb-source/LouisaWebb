@@ -58,6 +58,33 @@ button,a{font:inherit}
   font-family:var(--serif);font-weight:400;line-height:1.03;letter-spacing:-.025em
 }
 .hero-copy{width:100%;max-width:none;text-align:center}
+.hero-book-layout{
+  width:min(1220px,100%);margin:auto;display:grid;
+  grid-template-columns:minmax(250px,360px) minmax(0,1fr);
+  gap:clamp(36px,6vw,86px);align-items:center
+}
+.hero-cover-card{position:relative;text-align:center}
+.hero-cover-card img{
+  width:100%;display:block;border-radius:10px;
+  box-shadow:0 28px 70px rgba(0,0,0,.58),0 0 45px rgba(159,29,55,.13)
+}
+.hero-release{
+  margin:18px 0 0;font-size:.7rem;letter-spacing:.16em;
+  color:#a99a92
+}
+.hero-book-layout .hero-copy{text-align:left}
+.hero-book-layout .series-title{font-size:clamp(1.5rem,2.6vw,3.15rem)}
+.hero-book-title{
+  margin:.2em 0 .05em;font-family:var(--serif);font-weight:400;
+  font-size:clamp(2.7rem,5vw,5.5rem);line-height:.98;color:var(--cream)
+}
+.hero-book-layout .hero-tagline{
+  margin:.35em 0 .65em;font-size:clamp(1.65rem,2.6vw,3.25rem)
+}
+.hero-pills{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.hero-book-layout .hero-text{max-width:720px;margin-inline:0}
+.hero-book-layout .hero-actions{justify-content:flex-start}
+
 .series-title{
   width:100%;margin:0;font-family:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
   font-size:clamp(2.25rem,4.15vw,5rem);font-weight:400;line-height:1.08;letter-spacing:.075em;text-transform:uppercase;
@@ -357,3 +384,17 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .record-page-nav>:last-child{justify-self:end}
 .record-page-nav .text-link{white-space:nowrap;text-align:center}
 @media(max-width:720px){.archive-index-card{grid-template-columns:48px 1fr;padding:19px;gap:12px}.record-page-nav{grid-template-columns:1fr}.record-page-nav>*{justify-self:stretch!important;text-align:center}.record-page-nav span:empty{display:none}}
+
+@media (max-width:900px){
+  .hero-book-layout{grid-template-columns:1fr;max-width:720px}
+  .hero-cover-card{max-width:270px;margin:auto}
+  .hero-book-layout .hero-copy{text-align:center}
+  .hero-book-layout .hero-text{margin-inline:auto}
+  .hero-book-layout .hero-actions,.hero-pills{justify-content:center}
+}
+@media (max-width:620px){
+  .hero-cover-card{max-width:220px}
+  .hero-book-title{font-size:clamp(2.45rem,13vw,4.2rem)}
+  .hero-book-layout .hero-tagline{font-size:clamp(1.55rem,8vw,2.5rem)}
+  .hero-release{font-size:.62rem}
+}
