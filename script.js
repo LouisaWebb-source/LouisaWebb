@@ -10,6 +10,7 @@
     ['a[href="https://a.co/d/08CE61fI"]', 'click-preorder-amazon', 'Pre-order on Amazon'],
     ['a[href="excerpt.html"]', 'click-read-excerpt', 'Read the excerpt'],
     ['a[href="trigger-warnings/"]', 'click-trigger-warnings', 'Read trigger warnings'],
+    ['a[href*="goodreads.com/book/show/257485719-abducted-into-fairyland"]', 'click-goodreads', 'View on Goodreads'],
     ['a[href*="instagram.com/louisa_webb_author"]', 'click-instagram', 'Open Instagram'],
     ['a[href*="facebook.com/profile.php"]', 'click-facebook', 'Open Facebook']
   ];
