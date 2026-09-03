@@ -30,6 +30,7 @@
       ['.hero', 'section-hero', 'Homepage section: Hero'],
       ['.social-banner', 'section-social', 'Homepage section: Social links'],
       ['#books', 'section-book-one', 'Homepage section: Book One'],
+      ['#newsletter', 'section-newsletter', 'Homepage section: Newsletter'],
       ['#fairyland', 'section-fairyland', 'Homepage section: Inside Fairyland'],
       ['#series', 'section-series', 'Homepage section: Series'],
       ['#warnings', 'section-warnings', 'Homepage section: Trigger Warnings'],
