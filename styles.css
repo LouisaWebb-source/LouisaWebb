@@ -115,6 +115,14 @@ button,a{font:inherit}
 .social-banner h2{margin:0;font-family:var(--serif);font-size:clamp(1.65rem,3vw,2.8rem);font-weight:400;line-height:1.15;color:var(--cream)}
 .social-banner-actions{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0}
 @media(max-width:760px){.social-banner{align-items:flex-start;flex-direction:column}.social-banner-actions{width:100%}.social-banner-actions .btn{flex:1}}
+.newsletter-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,620px);align-items:center;gap:clamp(36px,7vw,90px);background:radial-gradient(circle at 85% 35%,rgba(202,52,81,.16),transparent 30rem),#0d080b}
+.newsletter-intro{max-width:720px}
+.newsletter-intro h2{font-size:clamp(2.5rem,5vw,4.9rem);line-height:1.02;margin:.18em 0 .35em}
+.newsletter-intro>p:last-child{max-width:640px;color:#c9bbba;font-size:clamp(1rem,1.4vw,1.2rem);line-height:1.7}
+.newsletter-form-shell{padding:18px;border:1px solid rgba(217,198,156,.24);border-radius:22px;background:rgba(255,255,255,.025);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.newsletter-form-shell iframe{display:block;width:100%;max-width:100%;margin:0 auto;border:0}
+@media(max-width:900px){.newsletter-section{grid-template-columns:1fr}.newsletter-intro{text-align:center;margin:auto}.newsletter-form-shell{width:min(100%,620px);margin:auto}}
+@media(max-width:560px){.newsletter-form-shell{padding:8px}.newsletter-form-shell iframe{height:700px}}
 .section-heading{max-width:780px;margin-bottom:48px}
 .section h2,.about-card h2{font-size:clamp(2.6rem,5vw,5rem);margin:.12em 0}
 .section-kicker{font-family:var(--serif);font-style:italic;color:#cbb8b5;font-size:1.15rem}
