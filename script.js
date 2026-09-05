@@ -10,6 +10,7 @@
     ['a[href="https://a.co/d/08CE61fI"]', 'click-preorder-amazon', 'Pre-order on Amazon'],
     ['a[href="excerpt.html"]', 'click-read-excerpt', 'Read the excerpt'],
     ['a[href="trigger-warnings/"]', 'click-trigger-warnings', 'Read trigger warnings'],
+    ['a[href="newsletter/"], a[href="/newsletter/"]', 'click-newsletter', 'Open the newsletter signup'],
     ['a[href*="goodreads.com/book/show/257485719-abducted-into-fairyland"]', 'click-goodreads', 'View on Goodreads'],
     ['a[href*="instagram.com/louisa_webb_author"]', 'click-instagram', 'Open Instagram'],
     ['a[href*="facebook.com/profile.php"]', 'click-facebook', 'Open Facebook']
@@ -68,6 +69,15 @@
   const reset = document.getElementById('resetAge');
   const navToggle = document.getElementById('navToggle');
   const nav = document.getElementById('mainNav');
+
+  if (nav && !nav.querySelector('a[href*="newsletter"]')) {
+    const newsletterLink = document.createElement('a');
+    newsletterLink.href = '/newsletter/';
+    newsletterLink.textContent = 'Newsletter';
+    const blogLink = [...nav.querySelectorAll('a')].find(link => link.textContent.trim() === 'Blog');
+    if (blogLink) nav.insertBefore(newsletterLink, blogLink);
+    else nav.appendChild(newsletterLink);
+  }
 
   const verified = localStorage.getItem('louisaWebbAgeVerified') === 'yes';
 
