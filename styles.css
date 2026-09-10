@@ -241,6 +241,10 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 .excerpt-paper p{margin:0 0 1.35rem;font-family:var(--serif);font-size:clamp(1.05rem,1.5vw,1.22rem);line-height:1.85;color:#e3d9cc}
 .excerpt-paper p:first-child{font-size:clamp(1.3rem,2vw,1.65rem);color:var(--cream)}
 .excerpt-end{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line);text-align:center;color:var(--gold)!important;font-style:italic}
+.excerpt-primary-action{justify-content:center;margin-top:32px}
+.excerpt-primary-action .btn{min-width:min(100%,360px);white-space:normal;text-align:center;line-height:1.25}
+.excerpt-release-note{margin:.8rem auto 0;text-align:center;color:#a99a92;font-size:.9rem}
+@media(max-width:560px){.excerpt-primary-action .btn{width:100%;padding-inline:18px}}
 .arc-section{padding-top:40px}
 .arc-card{
   max-width:1200px;margin:auto;padding:clamp(32px,6vw,70px);display:flex;align-items:center;justify-content:space-between;gap:35px;
