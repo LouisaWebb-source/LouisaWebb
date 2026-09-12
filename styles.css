@@ -436,10 +436,10 @@ blockquote{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-styl
 }
 
 
-/* Demon Army commander character cards */
-.commander-card-art{width:min(100%,520px);margin:12px auto 28px}
-.commander-card-art a{display:block;border-radius:14px;overflow:hidden;border:1px solid rgba(216,181,122,.38);box-shadow:0 18px 50px rgba(0,0,0,.48)}
-.commander-card-art img{display:block;width:100%;height:auto;background:#080609;transition:transform .22s ease,filter .22s ease}
-.commander-card-art a:hover img,.commander-card-art a:focus-visible img{transform:scale(1.012);filter:brightness(1.04)}
-.commander-card-art a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
-@media(max-width:620px){.commander-card-art{margin:8px auto 22px}.canon-person-body:has(.commander-card-art){padding-inline:14px}}
+/* Character profile artwork */
+.character-card-art{width:min(100%,520px);margin:12px auto 28px}
+.character-card-art a{display:block;border-radius:14px;overflow:hidden;border:1px solid rgba(216,181,122,.38);box-shadow:0 18px 50px rgba(0,0,0,.48)}
+.character-card-art img{display:block;width:100%;height:auto;background:#080609;transition:transform .22s ease,filter .22s ease}
+.character-card-art a:hover img,.character-card-art a:focus-visible img{transform:scale(1.012);filter:brightness(1.04)}
+.character-card-art a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+@media(max-width:620px){.character-card-art{margin:8px auto 22px}.canon-person-body:has(.character-card-art){padding-inline:14px}}
