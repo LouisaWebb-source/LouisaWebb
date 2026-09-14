@@ -12,6 +12,8 @@
     ['a[href="trigger-warnings/"]', 'click-trigger-warnings', 'Read trigger warnings'],
     ['a[href="newsletter/"], a[href="/newsletter/"]', 'click-newsletter', 'Open the newsletter signup'],
     ['a[href*="goodreads.com/book/show/257485719-abducted-into-fairyland"]', 'click-goodreads', 'View on Goodreads'],
+    ['a[href="https://a.co/d/04Rx78QO"]', 'click-book2-preorder-amazon', 'Book 2 pre-order on Amazon'],
+    ['a[href*="goodreads.com/book/show/258378776-bonded-by-fairyland"]', 'click-book2-goodreads', 'Book 2 on Goodreads'],
     ['a[href*="instagram.com/louisa_webb_author"]', 'click-instagram', 'Open Instagram'],
     ['a[href*="facebook.com/profile.php"]', 'click-facebook', 'Open Facebook']
   ];
