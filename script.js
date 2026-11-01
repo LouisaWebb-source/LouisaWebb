@@ -7,7 +7,7 @@
 
   // Anonymous click events for the main reader actions.
   const trackedLinks = [
-    ['a[href="https://a.co/d/08CE61fI"]', 'click-preorder-amazon', 'Pre-order on Amazon'],
+    ['a[href="https://a.co/d/08CE61fI"]', 'click-preorder-amazon', 'Available on Amazon now'],
     ['a[href="excerpt.html"]', 'click-read-excerpt', 'Read the excerpt'],
     ['a[href="trigger-warnings/"]', 'click-trigger-warnings', 'Read trigger warnings'],
     ['a[href="newsletter/"], a[href="/newsletter/"]', 'click-newsletter', 'Open the newsletter signup'],
